@@ -1,0 +1,181 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+    color: #fff;
+}
+
+header {
+    background-color: #121212;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #069AF3;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0581cf;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #069AF3, #262626);
+    padding-top: 5em;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta {
+    background-color:#069AF3;
+    color: #fff;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #069AF3;
+}
+
+/* Featured Section */
+.featured {
+    padding: 4em 0;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.featured h2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.album-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.album {
+    max-width: 30%;
+    margin-bottom: 2em;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album h3 {
+    margin-top: 1em;
+    font-weight: 500;
+}
+
+.album:hover img {
+    transform: scale(1.05);
+}
+
+
+.music-player {
+    background-color: #121212;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.player-controls button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #069AF3;
+    margin: 0 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.player-controls button:hover {
+    color: #069AF3;
+   
+}
+
+.track-info p {
+    margin: 0;
+}
+
+.volume input[type="range"] {
+    width: 100px;
+    background: #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .album {
+        max-width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
